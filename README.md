@@ -8,8 +8,8 @@ Privacy policy: https://carljustdoit.github.io/world-cup-seller-champion-privacy
 
 Latest frontier build: v0.4.162
 
-Download: https://carljustdoit.github.io/world-cup-seller-champion-privacy/downloads/world-cup-seller-champion-frontier-latest.zip
+Download: https://raw.githubusercontent.com/carljustdoit/world-cup-seller-champion-privacy/main/downloads/world-cup-seller-champion-frontier-latest.zip
 
-Versioned download: https://carljustdoit.github.io/world-cup-seller-champion-privacy/downloads/world-cup-seller-champion-frontier-0.4.162.zip
+Versioned download: https://raw.githubusercontent.com/carljustdoit/world-cup-seller-champion-privacy/main/downloads/world-cup-seller-champion-frontier-0.4.162.zip
 
 Frontier builds are newer than the Chrome Web Store version and have not been reviewed by Google yet. Only install them if you are comfortable loading an unpacked Chrome extension. Use at your own risk and follow the rules of the ticket platform you are using.
