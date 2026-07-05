@@ -3,76 +3,101 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
     <title>Privacy Policy - World Cup Seller Champion</title>
     <style>
       :root {
         color-scheme: light;
-        --ink: #202633;
-        --muted: #626b78;
-        --line: #dfe5e7;
+        --ink: #17202c;
+        --muted: #687382;
         --paper: #ffffff;
-        --bg: #f7f7f2;
-        --gold: #c79a35;
+        --cream: #f6f3eb;
+        --line: #dfe4e2;
+        --pitch: #178b52;
+        --gold: #c99a31;
+        --night: #0c1018;
       }
+      * { box-sizing: border-box; }
       body {
         margin: 0;
-        font: 16px/1.62 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, sans-serif;
         color: var(--ink);
-        background: var(--bg);
+        background: var(--cream);
+        font: 500 16px/1.62 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       }
       main {
-        max-width: 860px;
+        max-width: 900px;
         margin: 0 auto;
-        padding: 48px 20px 72px;
+        padding: 44px 18px 70px;
       }
       article {
-        padding: 32px;
-        background: var(--paper);
+        padding: 30px;
         border: 1px solid var(--line);
-        border-radius: 14px;
-        box-shadow: 0 18px 48px rgba(8, 9, 13, .06);
+        border-radius: 10px;
+        background: var(--paper);
+        box-shadow: 0 22px 60px rgba(17, 24, 39, .08);
       }
       h1, h2 {
+        margin: 0;
         line-height: 1.15;
       }
       h1 {
-        margin: 0 0 8px;
-        font-size: clamp(32px, 5vw, 48px);
-        letter-spacing: -0.02em;
+        font-size: clamp(34px, 6vw, 54px);
       }
       h2 {
-        margin: 32px 0 8px;
-        font-size: 20px;
+        margin-top: 30px;
+        font-size: 21px;
       }
       p, ul {
         margin: 10px 0;
       }
       ul {
-        padding-left: 24px;
+        padding-left: 22px;
       }
       li {
         margin: 6px 0;
+      }
+      a {
+        color: #1f57d8;
       }
       .meta {
         color: var(--muted);
       }
       .notice {
-        margin-top: 18px;
+        margin: 20px 0;
         padding: 14px 16px;
-        border-left: 4px solid var(--gold);
-        background: #fff8e4;
+        border-left: 4px solid var(--pitch);
         border-radius: 8px;
+        background: #f1fbf5;
       }
-      a {
-        color: #1d4ed8;
+      .warn {
+        border-left-color: var(--gold);
+        background: #fff8e4;
+      }
+      .top-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 20px 0 0;
+      }
+      .top-links a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 38px;
+        padding: 0 14px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        color: var(--ink);
+        background: #fff;
+        font-weight: 700;
+        text-decoration: none;
+      }
+      .top-links a:first-child {
+        color: #fff;
+        background: var(--night);
       }
       @media (max-width: 640px) {
-        main {
-          padding: 20px 12px 40px;
-        }
-        article {
-          padding: 22px;
-        }
+        main { padding: 18px 10px 42px; }
+        article { padding: 20px; }
       }
     </style>
   </head>
@@ -80,52 +105,63 @@
     <main>
       <article>
         <h1>Privacy Policy</h1>
-        <p class="meta">World Cup Seller Champion<br>Effective date: June 13, 2026</p>
-
-        <p>
-          World Cup Seller Champion is a Chrome extension that helps ticket sellers understand resale market supply, fee impact, comparable listings, and pricing opportunities on supported ticket resale pages.
-        </p>
-
-        <div class="notice">
-          The current version stores data locally in your browser. It does not send your captured ticket data, seller inputs, or browsing history to our servers.
+        <p class="meta">World Cup Seller Champion<br>Effective date: July 5, 2026</p>
+        <div class="top-links">
+          <a href="https://www.wc26champion.com">Main website</a>
+          <a href="downloads/world-cup-seller-champion-frontier-latest.zip">Latest frontier ZIP</a>
         </div>
 
-        <h2>Information the Extension Handles</h2>
-        <p>The extension may handle the following information when you use it on a supported ticket resale page:</p>
+        <div class="notice">
+          We do not send your name, account, payment details, purchase cost, target price, IP address, or private seats you type as yours in shared scans.
+        </div>
+
+        <p>
+          World Cup Seller Champion is a Chrome extension and website for World Cup ticket buyers and sellers. It helps users read public ticket listings, understand fee math, compare prices, and watch market movement.
+        </p>
+
+        <h2>What the extension handles</h2>
         <ul>
-          <li>Ticket listing data visible to the page, such as match, category, section, row, seat, listing price, and listing status.</li>
-          <li>Estimated fee calculations, including estimated buyer checkout price and estimated seller payout.</li>
-          <li>Market snapshots and timestamps used to show new listings, changed prices, and tickets no longer listed.</li>
-          <li>Seat details you enter manually, such as your section, row, seat number, original ticket cost, and target list price.</li>
-          <li>The URL of the active supported ticket page, used only to identify the current match and send scan commands to that tab.</li>
+          <li>Public ticket listings visible on supported ticket pages, such as match, category, section, row, seat, list price, and listing status.</li>
+          <li>Estimated fee math, including buyer checkout price and seller payout.</li>
+          <li>Market scan timestamps used to show new listings, changed prices, and tickets no longer listed.</li>
+          <li>Seat details you type for your own pricing, such as section, row, seat, purchase cost, and target price.</li>
+          <li>Email addresses only when you use Direct Match to post a public FIFA-listed seat or ask a seller to contact you.</li>
         </ul>
 
-        <h2>How We Use Information</h2>
-        <p>World Cup Seller Champion uses this information to provide seller-facing features, including:</p>
-        <ul>
-          <li>Showing current ticket supply and price ranges.</li>
-          <li>Comparing similar seats and adjacent-seat packages.</li>
-          <li>Estimating buyer final price, seller proceeds, profit, and profit margin.</li>
-          <li>Tracking market changes between user-initiated checks.</li>
-          <li>Letting you export your own current or historical market snapshots as CSV or JSON.</li>
-        </ul>
-
-        <h2>Local Storage</h2>
+        <h2>Local data</h2>
         <p>
-          The extension stores market snapshots, seller-entered seats, and scan history in Chrome's local extension storage on your device. This allows the side panel to show saved games, historical changes, and exportable data.
+          By default, market snapshots, saved games, and seats you type as yours stay in Chrome extension storage on your device.
         </p>
 
-        <h2>Data Sharing</h2>
+        <h2>Shared scans</h2>
         <p>
-          The current version does not sell, rent, share, or transfer your captured data to third parties. The extension does not upload your captured market data to a cloud database.
+          If you turn on scan sharing, the extension sends public ticket listing data from the scan to our backend. Shared scans help build seller insights such as supply, price changes, new tickets, and tickets that disappeared from the market.
         </p>
         <p>
-          If a future version adds optional cloud sync, seller crowdsourcing, accounts, or server-side analytics, this policy will be updated before those features are released, and those features will require clear user-facing disclosure and consent where required.
+          Shared scans do not include your name, email, phone number, FIFA account, Google account, payment details, IP address, purchase cost, target price, or seats you type as your own. We send only public market listings shown by the ticket page plus a random anonymous ID.
         </p>
 
-        <h2>Remote Code</h2>
+        <h2>Insights access code</h2>
         <p>
-          The extension does not load or execute remote JavaScript. Extension code, HTML, CSS, and icons are packaged with the extension. Supported ticket page responses are treated as data for seller analysis.
+          After a successful shared scan, the extension may show a 24-hour seller insights access code. We store a hashed version of the code, issue time, expiration time, anonymous visitor ID, scan ID, game ID, and shared seat count. We do not store the plain code.
+        </p>
+
+        <h2>Direct Match</h2>
+        <p>
+          Direct Match is optional. Sellers can promote a public FIFA-listed seat and enter an email plus a direct ask price. Buyers can enter an email to contact the seller. We store the seller email, buyer email, public seat listing, direct ask price, and request time so the buyer and seller can connect.
+        </p>
+        <p>
+          We do not process payment, transfer tickets, verify either side, or guarantee a deal. Buyers and sellers handle offline payment, transfer, safety, and platform rules themselves.
+        </p>
+
+        <h2>Website analytics</h2>
+        <p>
+          The main website may use Google Analytics after cookie/privacy notice consent. Google Analytics may receive visit information such as pages viewed, browser/device details, approximate location, and referrer. This is separate from extension scan sharing.
+        </p>
+
+        <h2>Remote code</h2>
+        <p>
+          The Chrome extension does not load or execute remote JavaScript. Extension code, HTML, CSS, and icons are packaged with the extension. Ticket page responses and backend API responses are treated as data.
         </p>
 
         <h2>Exports</h2>
@@ -133,24 +169,28 @@
           CSV and JSON exports are created only when you choose to download them. You control where exported files are saved and how they are used.
         </p>
 
-        <h2>Children's Privacy</h2>
+        <h2>Children</h2>
         <p>
           World Cup Seller Champion is not intended for children and does not knowingly collect personal information from children.
         </p>
 
-        <h2>Independent Tool</h2>
+        <h2>Independent tool</h2>
         <p>
-          World Cup Seller Champion is an independent seller tool. It is not affiliated with, endorsed by, or sponsored by FIFA, the FIFA World Cup, or any official ticketing platform.
+          World Cup Seller Champion is independent. It is not affiliated with, endorsed by, or sponsored by FIFA, the FIFA World Cup, or any official ticketing platform.
         </p>
+
+        <div class="notice warn">
+          Use the tool carefully and follow the rules of the ticket platform you are using.
+        </div>
 
         <h2>Contact</h2>
         <p>
-          For privacy questions, contact: <a href="mailto:theyuanconsulting@gmail.com">theyuanconsulting@gmail.com</a>
+          For privacy questions, contact <a href="mailto:theyuanconsulting@gmail.com">theyuanconsulting@gmail.com</a>.
         </p>
 
-        <h2>Changes to This Policy</h2>
+        <h2>Changes</h2>
         <p>
-          We may update this privacy policy as the extension changes. Updates will be posted on this page with a new effective date.
+          We may update this policy as the extension changes. Updates will be posted on this page with a new effective date.
         </p>
       </article>
     </main>
